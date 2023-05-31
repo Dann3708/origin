@@ -2,20 +2,20 @@
 #include <fstream>
 
 struct person {
-    std::string Num;
+    int Num;
     std::string Name;
-    int summ;
+    float summ;
 
 };
 
-void change_summ(person* p, int x) {
+void change_summ(person* p, float x) {
     p->summ = x;
 }
 
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    int summ2;
+    float summ2;
     person pers;
     std::cout << "Введите номер счёта: ";
     std::cin >> pers.Num;
